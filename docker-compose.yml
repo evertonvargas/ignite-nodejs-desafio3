@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  solid-everton:
+    image: bitnami/postgresql
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRESQL_USERNAME=usereverton
+      - POSTGRESQL_PASSWORD=passworddesafio
+      - POSTGRESQL_DATABASE=adocaopg
